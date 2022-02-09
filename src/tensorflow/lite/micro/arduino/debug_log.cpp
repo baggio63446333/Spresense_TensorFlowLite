@@ -31,7 +31,7 @@ limitations under the License.
 extern "C" void DebugLog(const char* s) {
   static bool is_initialized = false;
   if (!is_initialized) {
-    DEBUG_SERIAL_OBJECT.begin(9600);
+    DEBUG_SERIAL_OBJECT.begin(115200);
     is_initialized = true;
   }
   DEBUG_SERIAL_OBJECT.print(s);
