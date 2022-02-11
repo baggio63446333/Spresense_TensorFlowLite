@@ -18,8 +18,8 @@ limitations under the License.
 #include "Arduino.h"
 #include "constants.h"
 
-// The pin of the Arduino's built-in LED
-int led = LED_BUILTIN;
+// The pin of the Arduino's PWM dedicated pin
+int led = 3; // PWM
 
 // Track whether the function has run at least once
 bool initialized = false;
